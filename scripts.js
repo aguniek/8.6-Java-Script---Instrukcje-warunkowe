@@ -4,6 +4,14 @@ var value = (a * a) - (2 * a * b) - (b * b);
 
 console.log('Wynik działania (a * a) - (2 * a * b) - (b * b) to:' + value);
 
-console.log((value > 0) ? 'Wynik dodatni' : 'Wynik ujemny');
+//console.log((value > 0) ? 'Wynik dodatni' : 'Wynik ujemny');
+//
+//console.log((value == 0) ? 'Wynik jest rowny 0' : 'Wynik nie jest rowny 0');
 
-console.log((value == 0) ? 'Wynik jest rowny 0' : 'Wynik nie jest rowny 0');
+if (value > 0) {
+    console.log("Wynik dodatni");
+} else if (value < 0) {
+    console.log("Wynik ujemny");
+} else {
+    console.log("Liczba rowna zero");
+}
